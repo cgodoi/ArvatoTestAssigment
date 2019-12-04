@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Arvato_Test_assigment</name>
+    </assembly>
+    <members>
+        <member name="T:Arvato_Test_assigment.Clases.CreditCard">
+            <summary>
+            Credit Card class
+            </summary>
+        </member>
+        <member name="P:Arvato_Test_assigment.Clases.CreditCard.CardOwner">
+            <summary>
+            Card owner
+            </summary>
+        </member>
+        <member name="P:Arvato_Test_assigment.Clases.CreditCard.CardNumber">
+            <summary>
+            Card number 
+            </summary>
+        </member>
+        <member name="P:Arvato_Test_assigment.Clases.CreditCard.IssueDate">
+            <summary>
+            Issue Date MM/YYYY
+            </summary>
+        </member>
+        <member name="P:Arvato_Test_assigment.Clases.CreditCard.Cvc">
+            <summary>
+            Cvc 3/4 digits
+            </summary>
+        </member>
+        <member name="P:Arvato_Test_assigment.Clases.CreditCard.CardType">
+            <summary>
+            Card Type Name
+            </summary>
+        </member>
+        <member name="T:Arvato_Test_assigment.Clases.CreditCardValidator">
+            <summary>
+            CreditCard Validator Fluent
+            </summary>
+        </member>
+        <member name="M:Arvato_Test_assigment.Clases.CreditCardValidator.#ctor">
+            <summary>
+            CreditCard Validator Ctor
+            </summary>
+        </member>
+        <member name="T:Arvato_Test_assigment.Clases.CreditCardHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Arvato_Test_assigment.Clases.CreditCardHelper.CardType">
+            <summary>
+            CardType Enum
+            </summary>
+        </member>
+        <member name="M:Arvato_Test_assigment.Clases.CreditCardHelper.GetCardType(System.String)">
+            <summary>
+            get card type from card number
+            </summary>
+            <param name="pCardNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Arvato_Test_assigment.Clases.CreditCardHelper.CheckExpiredIssueDate(System.String)">
+            <summary>
+            Check Expired issue date
+            </summary>
+            <param name="pIssueDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Arvato_Test_assigment.Clases.CreditCardHelper.CheckFormatIssueDate(System.String)">
+            <summary>
+            Check Format Issue Date
+            </summary>
+            <param name="pIssueDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Arvato_Test_assigment.Clases.CreditCardHelper.CheckCvcInput(Arvato_Test_assigment.Clases.CreditCard)">
+            <summary>
+            Check Cvc Input 
+            </summary>
+            <param name="pCreditCard"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Arvato_Test_assigment.Clases.CreditCardApiResponse">
+            <summary>
+            Response for credit card validator
+            </summary>
+        </member>
+        <member name="P:Arvato_Test_assigment.Clases.CreditCardApiResponse.CreditCardType">
+            <summary>
+            Valid Credit Card type
+            </summary>
+        </member>
+        <member name="T:Arvato_Test_assigment.CreditCardValidatorController">
+            <summary>
+            CreditCardValidator Controller Class
+            </summary>
+        </member>
+        <member name="M:Arvato_Test_assigment.CreditCardValidatorController.#ctor(Microsoft.Extensions.Logging.ILogger{Arvato_Test_assigment.CreditCardValidatorController})">
+            <summary>
+            CreditCardValidatorController constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Arvato_Test_assigment.CreditCardValidatorController.Post(Arvato_Test_assigment.Clases.CreditCard)">
+            <summary>
+            Post api/CreditCardValidator
+            </summary>
+            <param name="pCreditCard"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Arvato_Test_assigment.Program">
+            <summary>
+            Program Class
+            </summary>
+        </member>
+        <member name="M:Arvato_Test_assigment.Program.Main(System.String[])">
+            <summary>
+            Program main method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Arvato_Test_assigment.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Host Builder Creation
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Arvato_Test_assigment.Startup">
+            <summary>
+            StartUp Class
+            </summary>
+        </member>
+        <member name="M:Arvato_Test_assigment.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            StartUp Ctor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Arvato_Test_assigment.Startup.Configuration">
+            <summary>
+            Configuration interface instance
+            </summary>
+        </member>
+        <member name="M:Arvato_Test_assigment.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+        </member>
+        <member name="M:Arvato_Test_assigment.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+        </member>
+    </members>
+</doc>
