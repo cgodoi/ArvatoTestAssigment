@@ -1,2 +1,10 @@
 
 *.user
+
+Arvato_Test_assigment/bin/
+
+Arvato_Test_assigment/obj/
+
+XUnitTestAssigment/bin/
+
+XUnitTestAssigment/obj/
