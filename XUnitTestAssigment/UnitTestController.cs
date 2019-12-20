@@ -9,7 +9,7 @@ using Xunit;
 
 namespace XUnitTestAssigment
 {
-    public class UnitTestCreditCard
+    public class UnitTestController
     {
         [Fact]
         public void ValidMasterCardTest()
@@ -176,21 +176,5 @@ namespace XUnitTestAssigment
 
         }
 
-
-
-        [Fact]
-        public void NoCardInfoTest()
-        {
-            var mValidator = new CreditCardValidator();
-            var mCreditCard = new CreditCard();
-
-            var mValResult = mValidator.Validate(mCreditCard);
-            Assert.False(mValResult.IsValid);
-            Assert.Contains(mValResult.Errors, x => x.PropertyName == "CardOwner");
-            Assert.Contains(mValResult.Errors, x => x.PropertyName == "IssueDate");
-            Assert.Contains(mValResult.Errors, x => x.PropertyName == "Cvc");
-            Assert.Contains(mValResult.Errors, x => x.PropertyName == "CardNumber");
-
-        }
     }
 }
